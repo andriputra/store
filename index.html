@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Store</title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src='assets/js/jquery.elevatezoom.js'></script>
+  <script src="assets/js/jquery-ui.js"></script>
+</head>
+<body>
+  <header id="header" class="blue-bg header-dekstop hidden-xs">
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="searchtop pull-right">
+              <ul class="nav nav-pills">
+                <li><a href="detail.html" class="link-detail">CART </a></li>
+                <li><a href="detail.html" class="link-detail">SIGN IN/SIGN UP</a></li>
+                <li>
+                  <form action="#" class="searchform">
+                    <input type="text" placeholder="Search" class="search-header">
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle">
+      <div class="container">
+        <div class="row row-righto">
+          <div class="col-sm-12">
+            <div class="logo centered-image">
+              <a href="detail.html" class="link-detail"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="mainmenu centered">
+              <ul class="nav navbar-nav navbar-collapse collapse" style="height: 1px;">
+                <li><a href="index.html">SHOP</a></li>
+                <li><a href="#">CAMPAIGN</a></li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">TOUR</a></li>
+                <li><a href="#">ABOUT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="header-mobile visible-xs">
+    <div class="text-center">
+      <div class="col-xs-12">
+        <div class="navbar-header menu-mobile">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <a href="#" class="logo-mobile"><span>ERIGO STORE</span></a>
+        <a href="#" class="cart pull-right">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="nav-mobile">
+      <ul class="nav navbar-nav collapse navbar-collapse">
+        <li><a href="#">HOME</a></li>
+        <li><a href="index.html">SHOP</a></li>
+        <li><a href="#">CAMPAIGN</a></li>
+        <li><a href="#">STORY</a></li>
+        <li><a href="#">TOUR</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="inner-shop-content">
+    <div class="container">
+      <div class="breadcrumb-number">
+      	<div class="text-right">
+      		<a class="sort-active actv" href="#"><span>20</span></a> |
+          <a href="#"><span>40</span></a> |
+          <a href="#"><span>80</span></a>
+      	</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xs-12 col-sm-3">
+          <div class="visible-xs">
+            <div id="menu-cats">
+              <div class="navbar-header mobile"> <span class="name-menu">MENU FILTER</span>
+                <button type="button" class="navbar-toggle menu-category" data-toggle="collapse" data-target=".left-sidebar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="side-menu visible-xs" action="index.html" method="post">
+            <div class="left-sidebar collapse">
+              <div class="menu-side all">
+                <h2>ALL</h2>
+              </div>
+              <div class="menu-side search">
+                <input type="text" name="search_text" placeholder="Search" value="" class="search">
+              </div>
+              <div class="menu-side category">
+                <h2>CATEGORY</h2>
+                <div id="showcatcon">
+                  <div class="checkbox">
+                    <input type="checkbox" id="category60" name="category[]" value="60">
+                    <label for="category60">JERSEY</label><br>
+                    <input type="checkbox" id="category61" name="category[]" value="61">
+                    <label for="category61">OUTERWEAR</label><br>
+                    <input type="checkbox" id="category62" name="category[]" value="62">
+                    <label for="category62">SHIRT</label><br>
+                    <input type="checkbox" id="category63" name="category[]" value="63">
+                    <label for="category63">SANDALS</label><br>
+                    <input type="checkbox" id="category64" name="category[]" value="64">
+                    <label for="category64">T-SHIRT</label><br>
+                    <input type="checkbox" id="category65" name="category[]" value="65">
+                    <label for="category65">PANTS</label><br>
+                    <input type="checkbox" id="category66" name="category[]" value="66">
+                    <label for="category66">SUKAJAN</label><br>
+                    <input type="checkbox" id="category67" name="category[]" value="67">
+                    <label for="category67">COACH JACKET</label><br>
+                    <input type="checkbox" id="category68" name="category[]" value="68">
+                    <label for="category68">STICKER</label><br>
+                    <input type="checkbox" id="category70" name="category[]" value="70">
+                    <label for="category70">ACCESSORIES</label><br>
+                    <input type="checkbox" id="category71" name="category[]" value="71">
+                    <label for="category71">PULLOVER</label><br>
+                    <input type="checkbox" id="category73" name="category[]" value="73">
+                    <label for="category73">TRUCKER JACKET</label><br>
+                  </div>
+                </div>
+              </div>
+              <!-- Color Sidebar -->
+              <div class="menu-side color">
+                <h2 id="showcol">COLOR</h2>
+                <div id="showcolcon" class="contentmenu" style="display: none;">
+                  <div class="checkbox">
+                    <div class="box-check">
+                      <input type="checkbox" id="color6" name="color[]" value="6">
+                      <label for="color6">GREY NAVY</label><br>
+                      <input type="checkbox" id="color7" name="color[]" value="7">
+                      <label for="color7">DARK GREY</label><br>
+                      <input type="checkbox" id="color8" name="color[]" value="8">
+                      <label for="color8">BLACK</label><br>
+                      <input type="checkbox" id="color9" name="color[]" value="9">
+                      <label for="color9">BLACK GREY</label><br>
+                      <input type="checkbox" id="color10" name="color[]" value="10">
+                      <label for="color10">BLACK RED</label><br>
+                      <input type="checkbox" id="color11" name="color[]" value="11">
+                      <label for="color11">BLUE</label><br>
+                      <input type="checkbox" id="color12" name="color[]" value="12">
+                      <label for="color12">BLUE WASH ICE</label><br>
+                      <input type="checkbox" id="color13" name="color[]" value="13">
+                      <label for="color13">BROWN</label><br>
+                      <input type="checkbox" id="color14" name="color[]" value="14">
+                      <label for="color14">COFFEE</label><br>
+                      <input type="checkbox" id="color15" name="color[]" value="15">
+                      <label for="color15">LIGHT BROWN</label><br>
+                      <input type="checkbox" id="color16" name="color[]" value="16">
+                      <label for="color16">DARK BROWN</label><br>
+                      <input type="checkbox" id="color17" name="color[]" value="17">
+                      <label for="color17">CREAM</label><br>
+                      <input type="checkbox" id="color18" name="color[]" value="18">
+                      <label for="color18">DARK BLUE</label><br>
+                      <input type="checkbox" id="color19" name="color[]" value="19">
+                      <label for="color19">DARK BROWN</label><br>
+                      <input type="checkbox" id="color20" name="color[]" value="20">
+                      <label for="color20">DARK GREEN</label><br>
+                      <input type="checkbox" id="color21" name="color[]" value="21">
+                      <label for="color21">DARK OLIVE</label><br>
+                      <input type="checkbox" id="color22" name="color[]" value="22">
+                      <label for="color22">GREEN</label><br>
+                      <input type="checkbox" id="color23" name="color[]" value="23">
+                      <label for="color23">GREY</label><br>
+                      <input type="checkbox" id="color24" name="color[]" value="24">
+                      <label for="color24">GREEN BOTTLE</label><br>
+                      <input type="checkbox" id="color25" name="color[]" value="25">
+                      <label for="color25">GREEN TOSCA</label><br>
+                      <input type="checkbox" id="color26" name="color[]" value="26">
+                      <label for="color26">IVORY</label><br>
+                      <input type="checkbox" id="color27" name="color[]" value="27">
+                      <label for="color27">KHAKI</label><br>
+                      <input type="checkbox" id="color28" name="color[]" value="28">
+                      <label for="color28">LIGHT BLUE</label><br>
+                      <input type="checkbox" id="color29" name="color[]" value="29">
+                      <label for="color29">CAMOUFLAGE</label><br>
+                      <input type="checkbox" id="color30" name="color[]" value="30">
+                      <label for="color30">MAROON</label><br>
+                      <input type="checkbox" id="color31" name="color[]" value="31">
+                      <label for="color31">MUSTARD</label><br>
+                      <input type="checkbox" id="color32" name="color[]" value="32">
+                      <label for="color32">NAVY</label><br>
+                      <input type="checkbox" id="color33" name="color[]" value="33">
+                      <label for="color33">OLIVE</label><br>
+                      <input type="checkbox" id="color34" name="color[]" value="34">
+                      <label for="color34">OLIVE CANVAS</label><br>
+                      <input type="checkbox" id="color35" name="color[]" value="35">
+                      <label for="color35">ORANGE NAVY CREAM</label><br>
+                      <input type="checkbox" id="color36" name="color[]" value="36">
+                      <label for="color36">PURPLE</label><br>
+                      <input type="checkbox" id="color37" name="color[]" value="37">
+                      <label for="color37">SWEET GREY</label><br>
+                      <input type="checkbox" id="color38" name="color[]" value="38">
+                      <label for="color38">TOSCA</label><br>
+                      <input type="checkbox" id="color39" name="color[]" value="39">
+                      <label for="color39">WHITE</label><br>
+                      <input type="checkbox" id="color40" name="color[]" value="40">
+                      <label for="color40">WHITE KHAKI NAVY</label><br>
+                      <input type="checkbox" id="color41" name="color[]" value="41">
+                      <label for="color41">RED</label><br>
+                      <input type="checkbox" id="color42" name="color[]" value="42">
+                      <label for="color42">RED GREEN</label><br>
+                      <input type="checkbox" id="color43" name="color[]" value="43">
+                      <label for="color43">RED GREEN CREAM</label><br>
+                      <input type="checkbox" id="color44" name="color[]" value="44">
+                      <label for="color44">CREAM COFFEE</label><br>
+                      <input type="checkbox" id="color45" name="color[]" value="45">
+                      <label for="color45">CREAM YELLOW</label><br>
+                      <input type="checkbox" id="color46" name="color[]" value="46">
+                      <label for="color46">COFFEE YELLOW</label><br>
+                      <input type="checkbox" id="color48" name="color[]" value="48">
+                      <label for="color48">BLACK BROWN</label><br>
+                      <input type="checkbox" id="color49" name="color[]" value="49">
+                      <label for="color49">BLUE BLACK</label><br>
+                      <input type="checkbox" id="color50" name="color[]" value="50">
+                      <label for="color50">BLUE GREEN</label><br>
+                      <input type="checkbox" id="color51" name="color[]" value="51">
+                      <label for="color51">BLUE GREY</label><br>
+                      <input type="checkbox" id="color52" name="color[]" value="52">
+                      <label for="color52">BLUE ORANGE</label><br>
+                      <input type="checkbox" id="color53" name="color[]" value="53">
+                      <label for="color53">BROWN GREY</label><br>
+                      <input type="checkbox" id="color54" name="color[]" value="54">
+                      <label for="color54">DARK KHAKI</label><br>
+                      <input type="checkbox" id="color55" name="color[]" value="55">
+                      <label for="color55">DARK TOSCA</label><br>
+                      <input type="checkbox" id="color56" name="color[]" value="56">
+                      <label for="color56">DARK GREY</label><br>
+                      <input type="checkbox" id="color57" name="color[]" value="57">
+                      <label for="color57">GREEN NAVY</label><br>
+                      <input type="checkbox" id="color58" name="color[]" value="58">
+                      <label for="color58">GREEN RED</label><br>
+                      <input type="checkbox" id="color59" name="color[]" value="59">
+                      <label for="color59">LIGHT GRAY</label><br>
+                      <input type="checkbox" id="color60" name="color[]" value="60">
+                      <label for="color60">LIGHT OLIVE</label><br>
+                      <input type="checkbox" id="color61" name="color[]" value="61">
+                      <label for="color61">MAROON BLUE</label><br>
+                      <input type="checkbox" id="color62" name="color[]" value="62">
+                      <label for="color62">NAVY BATA</label><br>
+                      <input type="checkbox" id="color63" name="color[]" value="63">
+                      <label for="color63">NAVY BLUE WHITE</label><br>
+                      <input type="checkbox" id="color64" name="color[]" value="64">
+                      <label for="color64">NAVY CREAM</label><br>
+                      <input type="checkbox" id="color65" name="color[]" value="65">
+                      <label for="color65">NAVY GREEN</label><br>
+                      <input type="checkbox" id="color66" name="color[]" value="66">
+                      <label for="color66">NAVY GREY</label><br>
+                      <input type="checkbox" id="color67" name="color[]" value="67">
+                      <label for="color67">NAVY RED</label><br>
+                      <input type="checkbox" id="color68" name="color[]" value="68">
+                      <label for="color68">NAVY TOSCA</label><br>
+                      <input type="checkbox" id="color69" name="color[]" value="69">
+                      <label for="color69">NAVY WHITE RED</label><br>
+                      <input type="checkbox" id="color70" name="color[]" value="70">
+                      <label for="color70">ORANGE GREEN</label><br>
+                      <input type="checkbox" id="color71" name="color[]" value="71">
+                      <label for="color71">TOSCA RED</label><br>
+                      <input type="checkbox" id="color72" name="color[]" value="72">
+                      <label for="color72">BLUE YELLOW</label><br>
+                      <input type="checkbox" id="color73" name="color[]" value="73">
+                      <label for="color73">BLUE RED GREY GREEN</label><br>
+                      <input type="checkbox" id="color74" name="color[]" value="74">
+                      <label for="color74">BLUE WHITE</label><br>
+                      <input type="checkbox" id="color75" name="color[]" value="75">
+                      <label for="color75">RED NAVY GREEN ARMY</label><br>
+                      <input type="checkbox" id="color76" name="color[]" value="76">
+                      <label for="color76">BLUE GREY YELLOW</label><br>
+                      <input type="checkbox" id="color77" name="color[]" value="77">
+                      <label for="color77">BLACK DARK GREY TOSCA</label><br>
+                      <input type="checkbox" id="color78" name="color[]" value="78">
+                      <label for="color78">BLACK RED AND LIST YELLOW</label><br>
+                      <input type="checkbox" id="color79" name="color[]" value="79">
+                      <label for="color79">RED GREY</label><br>
+                      <input type="checkbox" id="color80" name="color[]" value="80">
+                      <label for="color80">NAVY KHAKI</label><br>
+                      <input type="checkbox" id="color81" name="color[]" value="81">
+                      <label for="color81">NAVY WHITE</label><br>
+                      <input type="checkbox" id="color82" name="color[]" value="82">
+                      <label for="color82">NAVY MAROON</label><br>
+                      <input type="checkbox" id="color83" name="color[]" value="83">
+                      <label for="color83">GREY</label><br>
+                      <input type="checkbox" id="color84" name="color[]" value="84">
+                      <label for="color84">SOFT BROWN</label><br>
+                      <input type="checkbox" id="color85" name="color[]" value="85">
+                      <label for="color85">BLACK YELLOW</label><br>
+                      <input type="checkbox" id="color86" name="color[]" value="86">
+                      <label for="color86">BLUE RED</label><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Color Sidebar -->
+              <!-- Style Sidebar -->
+              <div class="menu-side sizes">
+                <h2 id="showstyle">STYLE</h2>
+                <div id="showstylecon" class="contentmenu" style="display: none;">
+                  <div class="checkbox">
+                    <div class="box-check">
+                      <input type="checkbox" id="size5" name="" value="5">
+                      <label for="size5">FLANNEL HOODIE</label><br>
+                      <input type="checkbox" id="size6" name="" value="6">
+                      <label for="size6">T-SHIRT</label><br>
+                      <input type="checkbox" id="size7" name="" value="7">
+                      <label for="size7">WORKPANTS</label><br>
+                      <input type="checkbox" id="size8" name="" value="8">
+                      <label for="size8">SWEATPANTS</label><br>
+                      <input type="checkbox" id="size9" name="" value="9">
+                      <label for="size9">RIPPED JOGGERJEANS</label><br>
+                      <input type="checkbox" id="size10" name="" value="10">
+                      <label for="size10">JOGGERJEANS</label><br>
+                      <input type="checkbox" id="size11" name="" value="11">
+                      <label for="size11">BOMBERJACKET</label><br>
+                      <input type="checkbox" id="size12" name="" value="12">
+                      <label for="size12">RIPPED CHAMBRAY</label><br>
+                      <input type="checkbox" id="size13" name="" value="13">
+                      <label for="size13">CHAMBRAY</label><br>
+                      <input type="checkbox" id="size14" name="" value="14">
+                      <label for="size14">JERSEY</label><br>
+                      <input type="checkbox" id="size15" name="" value="15">
+                      <label for="size15">HARRINGTON JACKET</label><br>
+                      <input type="checkbox" id="size16" name="" value="16">
+                      <label for="size16">KNITWEAR</label><br>
+                      <input type="checkbox" id="size17" name="" value="17">
+                      <label for="size17">POLOSHIRT</label><br>
+                      <input type="checkbox" id="size18" name="" value="18">
+                      <label for="size18">SWEATSHIRT</label><br>
+                      <input type="checkbox" id="size19" name="" value="19">
+                      <label for="size19">JOGGERPANTS</label><br>
+                      <input type="checkbox" id="size21" name="" value="21">
+                      <label for="size21">SHIRT JERSEY</label><br>
+                      <input type="checkbox" id="size22" name="" value="22">
+                      <label for="size22">FLANNEL</label><br>
+                      <input type="checkbox" id="size23" name="" value="23">
+                      <label for="size23">BACK PACK</label><br>
+                      <input type="checkbox" id="size24" name="" value="24">
+                      <label for="size24">PARKA</label><br>
+                      <input type="checkbox" id="size25" name="" value="25">
+                      <label for="size25">LONG SLEEVE</label><br>
+                      <input type="checkbox" id="size26" name="" value="26">
+                      <label for="size26">CAPS</label><br>
+                      <input type="checkbox" id="size27" name="" value="27">
+                      <label for="size27">OXFORD</label><br>
+                      <input type="checkbox" id="size28" name="" value="28">
+                      <label for="size28">MOTIVE SHIRT</label><br>
+                      <input type="checkbox" id="size29" name="" value="29">
+                      <label for="size29">BEANIE</label><br>
+                      <input type="checkbox" id="size30" name="" value="30">
+                      <label for="size30">TOTEBAG</label><br>
+                      <input type="checkbox" id="size31" name="" value="31">
+                      <label for="size31">SANDALS</label><br>
+                      <input type="checkbox" id="size32" name="" value="32">
+                      <label for="size32">JOGGERJEANS</label><br>
+                      <input type="checkbox" id="size33" name="" value="33">
+                      <label for="size33">CARGO PANTS</label><br>
+                      <input type="checkbox" id="size34" name="" value="34">
+                      <label for="size34">HAT</label><br>
+                      <input type="checkbox" id="size35" name="" value="35">
+                      <label for="size35">HOODIE</label><br>
+                      <input type="checkbox" id="size36" name="" value="36">
+                      <label for="size36">JEANS PANTS</label><br>
+                      <input type="checkbox" id="size37" name="" value="37">
+                      <label for="size37">SUKAJAN</label><br>
+                      <input type="checkbox" id="size38" name="" value="38">
+                      <label for="size38">COACH JACKET</label><br>
+                      <input type="checkbox" id="size39" name="" value="39">
+                      <label for="size39">JACKET JEANS</label><br>
+                      <input type="checkbox" id="size40" name="" value="40">
+                      <label for="size40">JEANS MEN</label><br>
+                      <input type="checkbox" id="size41" name="" value="41">
+                      <label for="size41">JEANS WOMEN</label><br>
+                      <input type="checkbox" id="size42" name="" value="42">
+                      <label for="size42">SWEATER</label><br>
+                      <input type="checkbox" id="size43" name="" value="43">
+                      <label for="size43">TRACK TOP</label><br>
+                      <input type="checkbox" id="size44" name="" value="44">
+                      <label for="size44">STICKER</label><br>
+                      <input type="checkbox" id="size45" name="" value="45">
+                      <label for="size45">PATCH</label><br>
+                      <input type="checkbox" id="size46" name="" value="46">
+                      <label for="size46">BAG</label><br>
+                      <input type="checkbox" id="size47" name="" value="47">
+                      <label for="size47">PULLOVER</label><br>
+                      <input type="checkbox" id="size48" name="" value="48">
+                      <label for="size48">PARKA</label><br>
+                      <input type="checkbox" id="size49" name="" value="49">
+                      <label for="size49">SHORT SHIRT</label><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Style Sidebar -->
+              <!-- Price Range Sidebar -->
+              <div class="menu-side range">
+                <h2>PRICE RANGE</h2>
+                <div class="well">
+                  <div id="slider-range_M" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                    <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                  </div>
+                  <input type="text" id="amount_M" name="price" readonly="" class="input-range">
+                </div>
+              </div>
+              <!-- End Price Range Sidebar -->
+              <!-- Submit Button Sidebar -->
+              <div class="sidebar submit">
+                <input type="submit" id="input_M" value="submit" class="btn btn-fefault btn-side">
+              </div>
+              <!-- End Submit Button Sidebar -->
+            </div>
+          </form>
+
+          <!-- Desktop View Filter -->
+          <form class="side-menu hidden-xs" action="index.html" method="post">
+            <div class="left-sidebar">
+              <div class="menu-side all">
+                <h2>ALL</h2>
+              </div>
+              <div class="menu-side search">
+                <input type="text" name="search_text" placeholder="Search" value="" class="search">
+              </div>
+              <div class="menu-side category">
+                <h2>CATEGORY</h2>
+                <div id="showcatcon">
+                  <div class="checkbox">
+                    <input type="checkbox" id="category60" name="category[]" value="60">
+                    <label for="category60">JERSEY</label><br>
+                    <input type="checkbox" id="category61" name="category[]" value="61">
+                    <label for="category61">OUTERWEAR</label><br>
+                    <input type="checkbox" id="category62" name="category[]" value="62">
+                    <label for="category62">SHIRT</label><br>
+                    <input type="checkbox" id="category63" name="category[]" value="63">
+                    <label for="category63">SANDALS</label><br>
+                    <input type="checkbox" id="category64" name="category[]" value="64">
+                    <label for="category64">T-SHIRT</label><br>
+                    <input type="checkbox" id="category65" name="category[]" value="65">
+                    <label for="category65">PANTS</label><br>
+                    <input type="checkbox" id="category66" name="category[]" value="66">
+                    <label for="category66">SUKAJAN</label><br>
+                    <input type="checkbox" id="category67" name="category[]" value="67">
+                    <label for="category67">COACH JACKET</label><br>
+                    <input type="checkbox" id="category68" name="category[]" value="68">
+                    <label for="category68">STICKER</label><br>
+                    <input type="checkbox" id="category70" name="category[]" value="70">
+                    <label for="category70">ACCESSORIES</label><br>
+                    <input type="checkbox" id="category71" name="category[]" value="71">
+                    <label for="category71">PULLOVER</label><br>
+                    <input type="checkbox" id="category73" name="category[]" value="73">
+                    <label for="category73">TRUCKER JACKET</label><br>
+                  </div>
+                </div>
+              </div>
+              <!-- Color Sidebar -->
+              <div class="menu-side color">
+                <h2 id="showcol">COLOR</h2>
+                <div id="showcolcon" class="contentmenu" style="display: none;">
+                  <div class="checkbox">
+                    <div class="box-check">
+                      <input type="checkbox" id="color6" name="color[]" value="6">
+                      <label for="color6">GREY NAVY</label><br>
+                      <input type="checkbox" id="color7" name="color[]" value="7">
+                      <label for="color7">DARK GREY</label><br>
+                      <input type="checkbox" id="color8" name="color[]" value="8">
+                      <label for="color8">BLACK</label><br>
+                      <input type="checkbox" id="color9" name="color[]" value="9">
+                      <label for="color9">BLACK GREY</label><br>
+                      <input type="checkbox" id="color10" name="color[]" value="10">
+                      <label for="color10">BLACK RED</label><br>
+                      <input type="checkbox" id="color11" name="color[]" value="11">
+                      <label for="color11">BLUE</label><br>
+                      <input type="checkbox" id="color12" name="color[]" value="12">
+                      <label for="color12">BLUE WASH ICE</label><br>
+                      <input type="checkbox" id="color13" name="color[]" value="13">
+                      <label for="color13">BROWN</label><br>
+                      <input type="checkbox" id="color14" name="color[]" value="14">
+                      <label for="color14">COFFEE</label><br>
+                      <input type="checkbox" id="color15" name="color[]" value="15">
+                      <label for="color15">LIGHT BROWN</label><br>
+                      <input type="checkbox" id="color16" name="color[]" value="16">
+                      <label for="color16">DARK BROWN</label><br>
+                      <input type="checkbox" id="color17" name="color[]" value="17">
+                      <label for="color17">CREAM</label><br>
+                      <input type="checkbox" id="color18" name="color[]" value="18">
+                      <label for="color18">DARK BLUE</label><br>
+                      <input type="checkbox" id="color19" name="color[]" value="19">
+                      <label for="color19">DARK BROWN</label><br>
+                      <input type="checkbox" id="color20" name="color[]" value="20">
+                      <label for="color20">DARK GREEN</label><br>
+                      <input type="checkbox" id="color21" name="color[]" value="21">
+                      <label for="color21">DARK OLIVE</label><br>
+                      <input type="checkbox" id="color22" name="color[]" value="22">
+                      <label for="color22">GREEN</label><br>
+                      <input type="checkbox" id="color23" name="color[]" value="23">
+                      <label for="color23">GREY</label><br>
+                      <input type="checkbox" id="color24" name="color[]" value="24">
+                      <label for="color24">GREEN BOTTLE</label><br>
+                      <input type="checkbox" id="color25" name="color[]" value="25">
+                      <label for="color25">GREEN TOSCA</label><br>
+                      <input type="checkbox" id="color26" name="color[]" value="26">
+                      <label for="color26">IVORY</label><br>
+                      <input type="checkbox" id="color27" name="color[]" value="27">
+                      <label for="color27">KHAKI</label><br>
+                      <input type="checkbox" id="color28" name="color[]" value="28">
+                      <label for="color28">LIGHT BLUE</label><br>
+                      <input type="checkbox" id="color29" name="color[]" value="29">
+                      <label for="color29">CAMOUFLAGE</label><br>
+                      <input type="checkbox" id="color30" name="color[]" value="30">
+                      <label for="color30">MAROON</label><br>
+                      <input type="checkbox" id="color31" name="color[]" value="31">
+                      <label for="color31">MUSTARD</label><br>
+                      <input type="checkbox" id="color32" name="color[]" value="32">
+                      <label for="color32">NAVY</label><br>
+                      <input type="checkbox" id="color33" name="color[]" value="33">
+                      <label for="color33">OLIVE</label><br>
+                      <input type="checkbox" id="color34" name="color[]" value="34">
+                      <label for="color34">OLIVE CANVAS</label><br>
+                      <input type="checkbox" id="color35" name="color[]" value="35">
+                      <label for="color35">ORANGE NAVY CREAM</label><br>
+                      <input type="checkbox" id="color36" name="color[]" value="36">
+                      <label for="color36">PURPLE</label><br>
+                      <input type="checkbox" id="color37" name="color[]" value="37">
+                      <label for="color37">SWEET GREY</label><br>
+                      <input type="checkbox" id="color38" name="color[]" value="38">
+                      <label for="color38">TOSCA</label><br>
+                      <input type="checkbox" id="color39" name="color[]" value="39">
+                      <label for="color39">WHITE</label><br>
+                      <input type="checkbox" id="color40" name="color[]" value="40">
+                      <label for="color40">WHITE KHAKI NAVY</label><br>
+                      <input type="checkbox" id="color41" name="color[]" value="41">
+                      <label for="color41">RED</label><br>
+                      <input type="checkbox" id="color42" name="color[]" value="42">
+                      <label for="color42">RED GREEN</label><br>
+                      <input type="checkbox" id="color43" name="color[]" value="43">
+                      <label for="color43">RED GREEN CREAM</label><br>
+                      <input type="checkbox" id="color44" name="color[]" value="44">
+                      <label for="color44">CREAM COFFEE</label><br>
+                      <input type="checkbox" id="color45" name="color[]" value="45">
+                      <label for="color45">CREAM YELLOW</label><br>
+                      <input type="checkbox" id="color46" name="color[]" value="46">
+                      <label for="color46">COFFEE YELLOW</label><br>
+                      <input type="checkbox" id="color48" name="color[]" value="48">
+                      <label for="color48">BLACK BROWN</label><br>
+                      <input type="checkbox" id="color49" name="color[]" value="49">
+                      <label for="color49">BLUE BLACK</label><br>
+                      <input type="checkbox" id="color50" name="color[]" value="50">
+                      <label for="color50">BLUE GREEN</label><br>
+                      <input type="checkbox" id="color51" name="color[]" value="51">
+                      <label for="color51">BLUE GREY</label><br>
+                      <input type="checkbox" id="color52" name="color[]" value="52">
+                      <label for="color52">BLUE ORANGE</label><br>
+                      <input type="checkbox" id="color53" name="color[]" value="53">
+                      <label for="color53">BROWN GREY</label><br>
+                      <input type="checkbox" id="color54" name="color[]" value="54">
+                      <label for="color54">DARK KHAKI</label><br>
+                      <input type="checkbox" id="color55" name="color[]" value="55">
+                      <label for="color55">DARK TOSCA</label><br>
+                      <input type="checkbox" id="color56" name="color[]" value="56">
+                      <label for="color56">DARK GREY</label><br>
+                      <input type="checkbox" id="color57" name="color[]" value="57">
+                      <label for="color57">GREEN NAVY</label><br>
+                      <input type="checkbox" id="color58" name="color[]" value="58">
+                      <label for="color58">GREEN RED</label><br>
+                      <input type="checkbox" id="color59" name="color[]" value="59">
+                      <label for="color59">LIGHT GRAY</label><br>
+                      <input type="checkbox" id="color60" name="color[]" value="60">
+                      <label for="color60">LIGHT OLIVE</label><br>
+                      <input type="checkbox" id="color61" name="color[]" value="61">
+                      <label for="color61">MAROON BLUE</label><br>
+                      <input type="checkbox" id="color62" name="color[]" value="62">
+                      <label for="color62">NAVY BATA</label><br>
+                      <input type="checkbox" id="color63" name="color[]" value="63">
+                      <label for="color63">NAVY BLUE WHITE</label><br>
+                      <input type="checkbox" id="color64" name="color[]" value="64">
+                      <label for="color64">NAVY CREAM</label><br>
+                      <input type="checkbox" id="color65" name="color[]" value="65">
+                      <label for="color65">NAVY GREEN</label><br>
+                      <input type="checkbox" id="color66" name="color[]" value="66">
+                      <label for="color66">NAVY GREY</label><br>
+                      <input type="checkbox" id="color67" name="color[]" value="67">
+                      <label for="color67">NAVY RED</label><br>
+                      <input type="checkbox" id="color68" name="color[]" value="68">
+                      <label for="color68">NAVY TOSCA</label><br>
+                      <input type="checkbox" id="color69" name="color[]" value="69">
+                      <label for="color69">NAVY WHITE RED</label><br>
+                      <input type="checkbox" id="color70" name="color[]" value="70">
+                      <label for="color70">ORANGE GREEN</label><br>
+                      <input type="checkbox" id="color71" name="color[]" value="71">
+                      <label for="color71">TOSCA RED</label><br>
+                      <input type="checkbox" id="color72" name="color[]" value="72">
+                      <label for="color72">BLUE YELLOW</label><br>
+                      <input type="checkbox" id="color73" name="color[]" value="73">
+                      <label for="color73">BLUE RED GREY GREEN</label><br>
+                      <input type="checkbox" id="color74" name="color[]" value="74">
+                      <label for="color74">BLUE WHITE</label><br>
+                      <input type="checkbox" id="color75" name="color[]" value="75">
+                      <label for="color75">RED NAVY GREEN ARMY</label><br>
+                      <input type="checkbox" id="color76" name="color[]" value="76">
+                      <label for="color76">BLUE GREY YELLOW</label><br>
+                      <input type="checkbox" id="color77" name="color[]" value="77">
+                      <label for="color77">BLACK DARK GREY TOSCA</label><br>
+                      <input type="checkbox" id="color78" name="color[]" value="78">
+                      <label for="color78">BLACK RED AND LIST YELLOW</label><br>
+                      <input type="checkbox" id="color79" name="color[]" value="79">
+                      <label for="color79">RED GREY</label><br>
+                      <input type="checkbox" id="color80" name="color[]" value="80">
+                      <label for="color80">NAVY KHAKI</label><br>
+                      <input type="checkbox" id="color81" name="color[]" value="81">
+                      <label for="color81">NAVY WHITE</label><br>
+                      <input type="checkbox" id="color82" name="color[]" value="82">
+                      <label for="color82">NAVY MAROON</label><br>
+                      <input type="checkbox" id="color83" name="color[]" value="83">
+                      <label for="color83">GREY</label><br>
+                      <input type="checkbox" id="color84" name="color[]" value="84">
+                      <label for="color84">SOFT BROWN</label><br>
+                      <input type="checkbox" id="color85" name="color[]" value="85">
+                      <label for="color85">BLACK YELLOW</label><br>
+                      <input type="checkbox" id="color86" name="color[]" value="86">
+                      <label for="color86">BLUE RED</label><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Color Sidebar -->
+              <!-- Style Sidebar -->
+              <div class="menu-side sizes">
+                <h2 id="showstyle">STYLE</h2>
+                <div id="showstylecon" class="contentmenu" style="display: none;">
+                  <div class="checkbox">
+                    <div class="box-check">
+                      <input type="checkbox" id="size5" name="" value="5">
+                      <label for="size5">FLANNEL HOODIE</label><br>
+                      <input type="checkbox" id="size6" name="" value="6">
+                      <label for="size6">T-SHIRT</label><br>
+                      <input type="checkbox" id="size7" name="" value="7">
+                      <label for="size7">WORKPANTS</label><br>
+                      <input type="checkbox" id="size8" name="" value="8">
+                      <label for="size8">SWEATPANTS</label><br>
+                      <input type="checkbox" id="size9" name="" value="9">
+                      <label for="size9">RIPPED JOGGERJEANS</label><br>
+                      <input type="checkbox" id="size10" name="" value="10">
+                      <label for="size10">JOGGERJEANS</label><br>
+                      <input type="checkbox" id="size11" name="" value="11">
+                      <label for="size11">BOMBERJACKET</label><br>
+                      <input type="checkbox" id="size12" name="" value="12">
+                      <label for="size12">RIPPED CHAMBRAY</label><br>
+                      <input type="checkbox" id="size13" name="" value="13">
+                      <label for="size13">CHAMBRAY</label><br>
+                      <input type="checkbox" id="size14" name="" value="14">
+                      <label for="size14">JERSEY</label><br>
+                      <input type="checkbox" id="size15" name="" value="15">
+                      <label for="size15">HARRINGTON JACKET</label><br>
+                      <input type="checkbox" id="size16" name="" value="16">
+                      <label for="size16">KNITWEAR</label><br>
+                      <input type="checkbox" id="size17" name="" value="17">
+                      <label for="size17">POLOSHIRT</label><br>
+                      <input type="checkbox" id="size18" name="" value="18">
+                      <label for="size18">SWEATSHIRT</label><br>
+                      <input type="checkbox" id="size19" name="" value="19">
+                      <label for="size19">JOGGERPANTS</label><br>
+                      <input type="checkbox" id="size21" name="" value="21">
+                      <label for="size21">SHIRT JERSEY</label><br>
+                      <input type="checkbox" id="size22" name="" value="22">
+                      <label for="size22">FLANNEL</label><br>
+                      <input type="checkbox" id="size23" name="" value="23">
+                      <label for="size23">BACK PACK</label><br>
+                      <input type="checkbox" id="size24" name="" value="24">
+                      <label for="size24">PARKA</label><br>
+                      <input type="checkbox" id="size25" name="" value="25">
+                      <label for="size25">LONG SLEEVE</label><br>
+                      <input type="checkbox" id="size26" name="" value="26">
+                      <label for="size26">CAPS</label><br>
+                      <input type="checkbox" id="size27" name="" value="27">
+                      <label for="size27">OXFORD</label><br>
+                      <input type="checkbox" id="size28" name="" value="28">
+                      <label for="size28">MOTIVE SHIRT</label><br>
+                      <input type="checkbox" id="size29" name="" value="29">
+                      <label for="size29">BEANIE</label><br>
+                      <input type="checkbox" id="size30" name="" value="30">
+                      <label for="size30">TOTEBAG</label><br>
+                      <input type="checkbox" id="size31" name="" value="31">
+                      <label for="size31">SANDALS</label><br>
+                      <input type="checkbox" id="size32" name="" value="32">
+                      <label for="size32">JOGGERJEANS</label><br>
+                      <input type="checkbox" id="size33" name="" value="33">
+                      <label for="size33">CARGO PANTS</label><br>
+                      <input type="checkbox" id="size34" name="" value="34">
+                      <label for="size34">HAT</label><br>
+                      <input type="checkbox" id="size35" name="" value="35">
+                      <label for="size35">HOODIE</label><br>
+                      <input type="checkbox" id="size36" name="" value="36">
+                      <label for="size36">JEANS PANTS</label><br>
+                      <input type="checkbox" id="size37" name="" value="37">
+                      <label for="size37">SUKAJAN</label><br>
+                      <input type="checkbox" id="size38" name="" value="38">
+                      <label for="size38">COACH JACKET</label><br>
+                      <input type="checkbox" id="size39" name="" value="39">
+                      <label for="size39">JACKET JEANS</label><br>
+                      <input type="checkbox" id="size40" name="" value="40">
+                      <label for="size40">JEANS MEN</label><br>
+                      <input type="checkbox" id="size41" name="" value="41">
+                      <label for="size41">JEANS WOMEN</label><br>
+                      <input type="checkbox" id="size42" name="" value="42">
+                      <label for="size42">SWEATER</label><br>
+                      <input type="checkbox" id="size43" name="" value="43">
+                      <label for="size43">TRACK TOP</label><br>
+                      <input type="checkbox" id="size44" name="" value="44">
+                      <label for="size44">STICKER</label><br>
+                      <input type="checkbox" id="size45" name="" value="45">
+                      <label for="size45">PATCH</label><br>
+                      <input type="checkbox" id="size46" name="" value="46">
+                      <label for="size46">BAG</label><br>
+                      <input type="checkbox" id="size47" name="" value="47">
+                      <label for="size47">PULLOVER</label><br>
+                      <input type="checkbox" id="size48" name="" value="48">
+                      <label for="size48">PARKA</label><br>
+                      <input type="checkbox" id="size49" name="" value="49">
+                      <label for="size49">SHORT SHIRT</label><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Style Sidebar -->
+              <!-- Price Range Sidebar -->
+              <div class="menu-side range">
+                <h2>PRICE RANGE</h2>
+                <div class="well">
+                  <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                    <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                  </div>
+                  <input type="text" id="amount" name="price" readonly="" class="input-range">
+                </div>
+              </div>
+              <!-- End Price Range Sidebar -->
+              <!-- Submit Button Sidebar -->
+              <div class="sidebar submit">
+                <input type="submit" id="input" value="submit" class="btn btn-fefault btn-side">
+              </div>
+              <!-- End Submit Button Sidebar -->
+            </div>
+          </form>
+          <!-- End Desktop View Filter -->
+        </div>
+
+      <!-- Content Product -->
+      <div class="col-md-9 col-xs-12 col-sm-9">
+        <div class="inner-content-product">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-3 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                    <span class="out-of-stock"></span>
+                    <span class="out-of-stock-overlay"></span>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">30%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ALYCIA TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-3">
+              <div class="content-product">
+                <div class="discount">
+                  <span class="number-disc">20%</span>
+                </div>
+                <a href="detail.html" class="link-detail">
+                  <figure class="img1 embed reveal-smooth">
+                    <img src="assets/img/product-dummy2.jpg" alt="product" class="piclink img-product img-responsive">
+                    <figcaption>
+            					<form action="#" method="post" enctype="">
+              					<input type="hidden" name="prod_id" value="">
+              					<button class="butmod" id="butmod1" data-src="" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+          					</figcaption>
+                  </figure>
+                </a>
+                <div class="desc product-price">
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">ORVILLE BROWN TRUCKER JACKET</a>
+                  </div>
+                  <div class="detil-prod">
+                    <del><a href="#" class="del red black-link">IDR. 425.000,00</a></del>
+                  </div>
+                  <div class="detil-prod">
+                    <a href="#" class="black-link">IDR. 297.500,00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination-section">
+          <div class="col-centered patop">
+            <div class=" centertext margintop marginbot pullright">
+      				<a href="#" class="black-link squared">PREV</a>
+      			</div>
+            <div class="centertext margintop marginbot pullleft">
+              <a href="#" class="black-link squared">1</a>
+            </div>
+            <div class="centertext margintop marginbot pullleft">
+              <a href="#" class=" black-link squared">2</a>
+            </div>
+            <div class="centertext margintop marginbot pullleft">
+              <a href="#" class=" black-link squared">3</a>
+            </div>
+            <div class="centertext margintop marginbot pullleft">
+              <a href="#" class="actv black-link squared">4</a>
+            </div>
+            <div class="centertext margintop marginbot pullleft">
+              <a href="#" class=" black-link squared">5</a>
+            </div>
+            <div class="centertext margintop marginbot pullleft">
+              <span class="black-link squared">....</span>
+            </div>
+            <div class="centertext margintop marginbot pullleft">
+              <a href="#" class=" black-link squared">19</a>
+            </div>
+            <div class="centertext margintop marginbot pullleft" style="text-align: left;float: left; margin-left: 10px">
+              <a href="#" class="black-link squared">NEXT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content Product -->
+  </div>
+</div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="logo centered-image">
+            <img src="assets/img/logo_footer.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 bep-padright">
+            <div class="single-widget ">
+              <h2>2016 ERIGO STORE</h2>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget margintoplil2">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="about">About</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="returns">Return &amp; Exchange</a></li>
+                <li><a href="howto">How to Order</a></li>
+                <li><a href="contact">Contacts</a></li>
+                <li class="mobile"><a href="member">SIGN IN/SIGN UP</a></li>								<li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget margintoplil2">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a target="_blank" href="#">Facebook</a></li>
+                <li><a target="_blank" href="#">Twitter</a></li>
+                <li><a target="_blank" href="#">Instagram</a></li>
+                <li><a target="_blank" href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-12 col-sm-2">
+            <div class="single-widget margintoplil2">
+              <ul class="nav nav-pills nav-stacked last">
+                <li><a href="https://line.me/R/ti/p/%40lvv2149h"><img height="36" border="0" alt="Friends Added" src="http://biz.line.naver.jp/line_business/img/btn/addfriends_en.png"></a></li>
+                <li><img src="http://qr-official.line.me/L/Pct0VOFepr.png" width="150px"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-5 col-sm-5">
+            <div class="image-magnify">
+              <img id="zoom_01" src='assets/img/product-dummy.jpg' data-zoom-image="assets/img/large/product-dummy.jpg" class="img-responsive"/>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-7">
+            <div class="desc-detail">
+              <form class="" action="index.html" method="post">
+                <h2 class="title">Kyoto Team Long Sleeve</h2>
+                <p class="type">T-Shirt</p>
+                <div class="pricing">
+                  <del>IDR. 195.000,00</del>
+                  <p class="discount-text">Discount 30%</p>
+                  <p class="rate-price">IDR. 136.500,00</p>
+                </div>
+                <div class="size-box">
+                  <p class="label-title">SIZE</p>
+                  <select class="select-size" name="select_size">
+                    <option value="Choose Size">Choose Size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                  </select>
+                </div>
+                <div class="size-qty">
+                  <p class="label-title">QTY</p>
+                  <input type="number" name="qty" value="" placeholder="1">
+                  <button type="submit" name="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to Cart</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$( "#showcol" ).click(function() {
+  $( "#showcolcon" ).slideToggle( "fast" );
+});
+$( "#showcat" ).click(function() {
+  $( "#showcatcon" ).slideToggle( "fast" );
+});
+$( "#showstyle" ).click(function() {
+  $( "#showstylecon" ).slideToggle( "fast" );
+});
+$(document).ready(function(){
+    $(".butmod").click(function(e) {
+        e.preventDefault();
+    })
+});
+
+//  Price Range
+$(function() {
+	$( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 1000000,
+		values: [50000,500000],
+		slide: function( event, ui ) {
+			$( "#amount" ).val( "IDR." + ui.values[ 0 ] + "  IDR." + ui.values[ 1 ] );
+		}
+	});
+	$( "#amount" ).val( "IDR." + $( "#slider-range" ).slider( "values", 0 ) + "  IDR." + $( "#slider-range" ).slider( "values", 1 ) );
+});
+
+$(function() {
+	$( "#slider-range_M" ).slider({
+		range: true,
+		min: 0,
+		max: 1000000,
+		values: [50000,500000],
+		slide: function( event, ui ) {
+			$( "#amount_M" ).val( "IDR." + ui.values[ 0 ] + "  IDR." + ui.values[ 1 ] );
+		}
+	});
+	$( "#amount_M" ).val( "IDR." + $( "#slider-range_M" ).slider( "values", 0 ) + "  IDR." + $( "#slider-range_M" ).slider( "values", 1 ) );
+});
+
+</script>
